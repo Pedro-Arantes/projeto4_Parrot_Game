@@ -29,7 +29,7 @@ body{
     text-align: center;
 }
 .title{
-    width: 50%;
+    margin:0 auto;
     margin-top: 40px;
 }
 .tabletop{
@@ -39,7 +39,7 @@ body{
     
     width: 80%;
 
-    margin-top: 20px;
+    margin-top: 30px;
 
     /*background-color: aqua;*/
 }
@@ -52,7 +52,9 @@ body{
     border-color: #99CEA8;
 
     margin-right: 20px;
-    margin-top: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
     display: flex;
     justify-content: center;
@@ -63,5 +65,13 @@ body{
 }
 
 @media (max-width: 435px) {
-    
+    .conteudo h1{
+        text-overflow: clip;
+        text-align:none;
+    }
+    .title{
+        
+        margin:0 auto;
+        margin-top: 40px;
+    }
 }
