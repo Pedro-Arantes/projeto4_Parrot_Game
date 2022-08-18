@@ -1,18 +1,60 @@
 let numberCards = prompt("Com Quantas Cartas deseja jogar?");
 let cards = [];
-const mexParrot = `<div class="mexParrot"><img src="img/front 2.png" alt="Parrot" ></div>`;
+const mexParrot = `<div>
+<div class = "Parrot face">
+    <img src="img/front 2.png" alt="Parrot" >
+</div>
+<div class = "backParrot face">
+    <img src="img/fiestaparrot.gif"alt="Parrot" >
+</div>`;
 
-const multParrot = `<div class="multParrot"><img src="img/front 2.png" alt="Parrot" ></div>`;
+const multParrot = `<div>
+<div class = "Parrot face">
+    <img src="img/front 2.png" alt="Parrot" >
+</div>
+<div class = "backParrot face">
+    <img src="img/tripletsparrot.gif"alt="Parrot" >
+</div>`;
 
-const metalParrot = `<div class="metalParrot"><img src="img/front 2.png" alt="Parrot" ></div>`;
+const metalParrot = `<div>
+<div class = "Parrot face">
+    <img src="img/front 2.png" alt="Parrot" >
+</div>
+<div class = "backParrot face">
+    <img src="img/metalparrot.gif"alt="Parrot" >
+</div>`;
 
-const uniParrot = `<div class="uniParrot"><img src="img/front 2.png" alt="Parrot" ></div>`;
+const uniParrot = `<div>
+<div class = "Parrot face">
+    <img src="img/front 2.png" alt="Parrot" >
+</div>
+<div class = "backParrot face">
+    <img src="img/unicornparrot.gif"alt="Parrot" >
+</div>`;
 
-const marParrot = `<div class="marParrot"><img src="img/front 2.png" alt="Parrot" ></div>`;
+const marParrot = `<div>
+<div class = "Parrot face">
+    <img src="img/front 2.png" alt="Parrot" >
+</div>
+<div class = "backParrot face">
+    <img src="img/revertitparrot.gif"alt="Parrot" >
+</div>`;
 
-const exploParrot = `<div class="exploParrot"><img src="img/front 2.png" alt="Parrot" ></div>`;
+const exploParrot = `<div>
+<div class = "Parrot face">
+    <img src="img/front 2.png" alt="Parrot" >
+</div>
+<div class = "backParrot face">
+    <img src="img/explodyparrot.gif"alt="Parrot" >
+</div>`;
 
-const broParrot = `<div class="broParrot"><img src="img/front 2.png" alt="Parrot" ></div>`;
+const broParrot = `<div>
+<div class = "Parrot face">
+    <img src="img/front 2.png" alt="Parrot" >
+</div>
+<div class = "backParrot face">
+    <img src="img/bobrossparrot.gif"alt="Parrot" >
+</div>`;
 
 
 initGame();

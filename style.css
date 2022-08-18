@@ -43,7 +43,20 @@ body{
 
     /*background-color: aqua;*/
 }
-.tabletop div {
+.tabletop  > div {
+
+
+    width: 117px;
+    height: 146px;
+
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    position: relative;
+}
+.face{
     background-color: #A7E9AF;
 
     border-radius: 5px;
@@ -51,17 +64,36 @@ body{
     border-width: 1px;
     border-color: #99CEA8;
 
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
+
+    width: 117px;
+    height: 146px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    backface-visibility: hidden;
+    transition: all .5s;
+    transform-style: preserve-3d;
 
-    width: 117px;
-    height: 146px;
+    position: absolute;
+}
+
+.backParrot{
+    transform: rotateY(180deg);
+    
+}
+.backParrot img{
+    
+    width: 90px;
+    height:  90px;
+}
+.tabletop  > div:hover  .backParrot{
+    transform: rotateY(0deg);
+}
+.tabletop  > div:hover .Parrot{
+    transform: rotateY(-180deg);
 }
 
 @media (max-width: 435px) {
