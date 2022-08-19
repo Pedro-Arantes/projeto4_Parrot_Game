@@ -7,6 +7,11 @@ body{
     background-color: #EEF9BF;
 }
 
+img{
+    width: 90px;
+    height:  90px;
+}
+
 .conteudo{
     display: flex;
     flex-direction: column;
@@ -80,19 +85,21 @@ body{
     position: absolute;
 }
 
-.backParrot{
+.Parrot{
     transform: rotateY(180deg);
     
 }
-.backParrot img{
+.Parrot img{
     
     width: 90px;
     height:  90px;
 }
-.tabletop  > div:hover  .backParrot{
+
+.Parrot{
     transform: rotateY(0deg);
 }
-.tabletop  > div:hover .Parrot{
+
+.backParrot{
     transform: rotateY(-180deg);
 }
 
