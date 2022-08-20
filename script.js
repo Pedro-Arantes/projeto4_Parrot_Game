@@ -169,9 +169,12 @@ function turnVerify(num,element){
    }
 }
 
+
 function comparador() { 
 	return Math.random() - 0.5; 
 }
+
+
 function initGame(){
     
    if (  numberCards%2 === 0 && numberCards<=14) {
@@ -197,6 +200,9 @@ function initGame(){
         
         erro();
    };
+
+   setTimeout(todasViradas,1000);
+   setTimeout(todasDesviradas,2000);
 };
 
 function erro(){
@@ -293,6 +299,38 @@ function initGamePlus(){
         
         erro();
    };
+   
+   setTimeout(todasViradas,1000);
+   setTimeout(todasDesviradas,2000);
+}
+function todasViradas(){
+   const viradas = document.querySelectorAll(".Parrot")
+   for (let i = 0; i < viradas.length; i++) {
+      const element = viradas[i];
+      const sibling = element.nextElementSibling;
+
+      element.classList.remove ("Parrot");
+      element.classList.add("backParrot");
+
+      sibling.classList.remove("backParrot");
+      sibling.classList.add("Parrot");
+      
+   }
+   
+}
+function todasDesviradas(){
+   const viradas = document.querySelectorAll(".Parrot")
+
+   for (let i = 0; i < viradas.length; i++) {
+      const element = viradas[i];
+      const sibling = element.previousElementSibling;
+
+      element.classList.toggle ("Parrot");
+      element.classList.toggle("backParrot");
+
+      sibling.classList.toggle("backParrot");
+      sibling.classList.toggle("Parrot");
+   }
 }
 
 initGame();
