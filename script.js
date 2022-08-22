@@ -74,7 +74,7 @@ function turnCard(element){
    let  siblingId = sibling.id;
    const unica = document.querySelectorAll(`.justone`)
    if (unica.length === 1) {
-      
+      jogadas++;
    }else{
 
       sibling.classList.remove("justone");
